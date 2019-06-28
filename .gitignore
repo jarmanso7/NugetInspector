@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/NuGetInspector/v15
+/ConsoleApp/bin/Debug/netcoreapp2.2
+/ConsoleApp/obj
+/Packages/bin/Debug/netcoreapp2.2
+/Packages/obj
