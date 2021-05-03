@@ -14,7 +14,7 @@ namespace NugetInspector.ConsoleApp
 
             using (var powerShellInstance = PowerShell.Create())
             {
-                powerShellInstance.AddScript("dotnet list C:\\Git\\NugetInspector package");
+                powerShellInstance.AddScript($@"dotnet list {args[0]} package");
 
                 // begin invoke execution on the pipeline
                 foreach (var o in powerShellInstance.Invoke())
@@ -40,9 +40,9 @@ namespace NugetInspector.ConsoleApp
 
                 foreach (Package pkg in packagesList)
                 {
-                    Console.WriteLine(pkg.Name);
+                    Console.Write(pkg.Name);
+                    Console.Write(" ");
                     Console.WriteLine(pkg.Version);
-                    Console.WriteLine();
                 }
             }
         }

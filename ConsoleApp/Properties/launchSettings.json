@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "NugetInspector.ConsoleApp": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Git\\NugetInspector"
+    }
+  }
+}
